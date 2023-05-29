@@ -1,0 +1,232 @@
+body {
+  background-color: #eee;
+  margin: 10px;
+  color : rgb(45, 172, 240) !important;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: #f3b86a;
+}
+
+.verify {
+
+  margin-top: -50px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+
+  justify-content: end;
+}
+
+.form-div {
+  position: relative;
+}
+
+
+
+.mob-adjust {
+  margin-bottom: 30px;
+}
+
+input {
+  background: transparent;
+  margin-top: -20px;
+}
+
+.proceed-btn {
+  margin-top: -2rem;
+}
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border: 1.5px solid black !important;
+}
+
+.form-label {
+  position: relative;
+  bottom: 2rem;
+  left: 0.4rem;
+  transition: all 0.3s ease-in-out;
+
+
+}
+
+#input1:focus~#firstname,
+#input1:not(:placeholder-shown)#input1:not(:focus)~#firstname {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #208EF7;
+  background: #208EF7;
+  background-color: white !important;
+}
+
+#input1:focus {
+  border-color: #208EF7 !important;
+}
+
+#input2:focus~#lastname,
+#input2:not(:placeholder-shown)#input2:not(:focus)~#lastname {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background-color: white !important;
+}
+
+#input3:focus~#gender,
+#input3:not(:placeholder-shown)#input3:not(:focus)~#gender {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background-color: white !important;
+}
+
+#input4:focus~#dob,
+#input4:not(:placeholder-shown)#input4:not(:focus)~#dob {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background-color: white !important;
+}
+
+#input5:focus~#email,
+#input5:not(:placeholder-shown)#input5:not(:focus)~#email {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #208EF7;
+  background: #208EF7;
+  background-color: white !important;
+}
+
+#input5:focus {
+  border-color: #208EF7 !important;
+}
+
+#phone_no:focus~#phone,
+#phone_no:not(:placeholder-shown)#phone_no:not(:focus)~#phone {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  color: #208EF7;
+  background: #208EF7;
+  background-color: white !important;
+}
+
+#phone_no:focus {
+  border-color: #208EF7 !important;
+}
+
+#input7:focus~#password,
+#input7:not(:placeholder-shown)#input7:not(:focus)~#password {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background-color: white !important;
+}
+
+#input8:focus~#confirmpass,
+#input8:not(:placeholder-shown)#input8:not(:focus)~#confirmpass {
+
+  bottom: 3.3rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  background-color: white !important;
+}
+
+
+
+
+
+div i {
+  margin-bottom: 50px;
+}
+
+.name {
+  display: inline-block;
+}
+
+
+.new-yoloo {
+  margin-top: -15px;
+}
+
+.align-link {
+  margin-top: -10px;
+}
+
+.text-center pa {
+  font-size: 1.2rem;
+  color: #f3b86a;
+}
+
+#customer {
+  display: inline;
+  margin: 2px;
+}
+
+#seller {
+  display: block;
+
+}
+
+#genderlabel {
+  margin-bottom: 3rem;
+
+  margin-left: 1rem
+}
+
+#gender {
+  word-wrap: normal;
+  margin-bottom: 3rem;
+  /* margin-right: 1px; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+#gender:hover {
+  border: 2.5px solid;
+  border-radius: 2.5px;
+}
+
+#termscondition {
+  display: block;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 20px
+}
+
+.proceed-btn {
+  margin-top: 0px !important;
+}
+
+#termscondition a {
+  margin: 0px;
+}
+
+.adjust-name {
+  display: block;
+  width: 100%;
+}
+
+
