@@ -34,12 +34,12 @@
 
                   <form class="mx-1 mx-md-4" action="" onsubmit="return false">
 
-                    <div class="d-flex flex-row align-items-center mb-4 form-div ">
+                    <div class="d-flex flex-row align-items-center mb-4 mt-1 form-div ">
                       
                       <div class="form-outline flex mb-0 name adjust-name">
                         <input type="text" id="input1" class="form-control" name="fname" placeholder=" " required />
                         <label style="font-size: 16px;" id="firstname" class="form-label w-50%" for="input1">Username<sup style="color: red;">*</sup> </label>
-                        <img id="user_error_img" style="bottom: 2rem;
+                        <img id="user_error_img" style="bottom: 2rem;right: 0.1rem;
                         position: relative;
                         float: right ;display: none;" src="Icon.svg">
                         <span id="user_error" style="color: red; display: none; position: relative; bottom: 1.5rem;font-size: 0.7rem;" class="help-block hide">Enter a valid username.</span>
@@ -55,7 +55,7 @@
                       <div class="form-outline flex-fill mb-0">
                         <input type="email" id="input5" class="form-control" name="email" placeholder=" " />
                         <label style="font-size: 16px;" id="email" class="form-label w-50%" for="input5">Registered Email Id</label>
-                        <img id= "email_error_img" style="bottom: 2rem;
+                        <img id= "email_error_img" style="bottom: 2rem;right: 0.1rem;
                         position: relative;
                         float: right ;display: none;" src="Icon.svg">
                         <span id="email_error" style="color: red; display: none; position: relative; bottom: 1.5rem;font-size: 0.7rem;" class="help-block hide">Enter a valid email address.</span>
@@ -67,7 +67,7 @@
                       <div class="form-outline flex-fill mb-0">
                         <input type="tel" id="phone_no" class="form-control" name="phone" placeholder=" " required />
                         <label style="font-size: 16px;" id="phone" class="form-label w-50%" for="phone_no">Registered Contact Number<sup style="color: red;">*</sup></label>
-                        <img id="mob_error" style="bottom: 2rem;
+                        <img id="mob_error" style="bottom: 2rem;right: 0.1rem;
                         position: relative;
                         float: right ;display: none;" src="Icon.svg">
                         <span id="client_id_error" style="color: red; display: none; position: relative; bottom: 1.5rem;font-size: 0.7rem;" class="help-block hide">Enter valid 10 digit Mobile number.</span>
@@ -133,6 +133,8 @@
   $('#input5').focusin(function(){
     $('#email').css("color", "#208EF7");
   });
+
+
   $('#phone_no').focusout(function(){
     // var alpha = /^[A-Za-z]+$/;
     var phone_no =  $('#phone_no').val();
@@ -159,6 +161,25 @@
         $('#Submit_data').css("background-color", "#A6A7A9");
       }
 });
+
+// Get the input element
+var input = document.getElementById('phone_no');
+
+// Attach an event listener for input changes
+input.addEventListener('input', function() {
+  // Get the input value
+  var value = input.value;
+
+  // Remove any non-digit characters from the input
+  var sanitizedValue = value.replace(/\D/g, '');
+
+  // Truncate the input to a maximum of 10 digits
+  var truncatedValue = sanitizedValue.substring(0, 10);
+
+  // Update the input value with the truncated value
+  input.value = truncatedValue;
+});
+
 
     $(document).on('click', '#Submit_data', function (e) {
       $('#webhook_output').addClass("hide")
