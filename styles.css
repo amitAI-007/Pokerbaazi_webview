@@ -66,9 +66,10 @@ input {
 #input1:focus~#firstname,
 #input1:not(:placeholder-shown)#input1:not(:focus)~#firstname {
 
-  bottom: 3.3rem;
+  bottom: 3.2rem;
+  padding-left: 0.1rem;
   left: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.65rem !important;
   color: #208EF7;
   background: #208EF7;
   background-color: white !important;
@@ -108,9 +109,10 @@ input {
 #input5:focus~#email,
 #input5:not(:placeholder-shown)#input5:not(:focus)~#email {
 
-  bottom: 3.3rem;
+  bottom: 3.2rem;
+  padding-left: 0.1rem;
   left: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.65rem !important;
   color: #208EF7;
   background: #208EF7;
   background-color: white !important;
@@ -123,9 +125,10 @@ input {
 #phone_no:focus~#phone,
 #phone_no:not(:placeholder-shown)#phone_no:not(:focus)~#phone {
 
-  bottom: 3.3rem;
+  bottom: 3.2rem;
+  padding-left: 0.1rem;
   left: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.65rem !important;
   color: #208EF7;
   background: #208EF7;
   background-color: white !important;
@@ -228,5 +231,11 @@ div i {
   display: block;
   width: 100%;
 }
-
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
 
